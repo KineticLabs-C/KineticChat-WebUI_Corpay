@@ -1,0 +1,351 @@
+================================================================================
+COMPREHENSIVE TEST REPORT - KINETICCHAT WEBUI
+================================================================================
+Generated: 2025-08-11 18:49:27 UTC
+Duration: 99.24 seconds
+Total Tests: 46
+Passed: 44 (95.7%)
+Failed: 2 (4.3%)
+
+================================================================================
+DETAILED RESULTS BY CATEGORY
+================================================================================
+
+## Greetings & Basic Interaction
+------------------------------------------------------------
+
+Intent: Greeting
+Status: [PASS]
+Message: hello
+Response: Hello! I'm your Kroger Health Assistant. I can help you with information about vaccinations, medications, health screenings, and wellness services. How can I assist you today?
+Duration: 267.83ms
+
+Intent: Greeting
+Status: [PASS]
+Message: hi there
+Response: Hello! I'm your Kroger Health Assistant. I can help you with information about vaccinations, medications, health screenings, and wellness services. How can I assist you today?
+Duration: 269.44ms
+
+Intent: Greeting
+Status: [PASS]
+Message: good morning
+Response: Hello! I'm your Kroger Health Assistant. I can help you with information about vaccinations, medications, health screenings, and wellness services. How can I assist you today?
+Duration: 266.66ms
+
+Intent: Spanish Greeting
+Status: [PASS]
+Message: hola
+Response: ¡Hola! Soy su Asistente de Salud de Kroger. Puedo ayudarle con información sobre vacunas, medicamentos, exámenes de salud y servicios de bienestar. ¿Cómo puedo ayudarle hoy?
+Duration: 266.74ms
+
+Intent: Spanish Greeting
+Status: [PASS]
+Message: buenos días
+Response: ¡Buenos días! ¿En qué puedo ayudarte hoy?
+Duration: 1492.60ms
+
+
+## Pharmacy Services
+------------------------------------------------------------
+
+Intent: Hours Query
+Status: [PASS]
+Message: What are your hours?
+Response: Customer Service Hours: Monday-Friday: 7 a.m. - Midnight EST Saturday-Sunday: 7 a.m. - 9:30 p.m. EST  Note: Individual pharmacy hours may vary by location. Check your local store for specific hours.
+Duration: 273.71ms
+
+Intent: Hours Query
+Status: [PASS]
+Message: When are you open?
+Response: Customer Service Hours: Monday-Friday: 7 a.m. - Midnight EST Saturday-Sunday: 7 a.m. - 9:30 p.m. EST  Note: Individual pharmacy hours may vary by location. Check your local store for specific hours.
+Duration: 261.24ms
+
+Intent: Location
+Status: [PASS]
+Message: Where is the pharmacy located?
+Response: Find your nearest Kroger pharmacy: 📍 Store Locator: https://www.kroger.com/stores/search 📱 Open in Maps: https://www.google.com/maps/search/?api=1&query=Kroger+pharmacy+near+me  With over 2,200 locati...
+Duration: 273.75ms
+
+Intent: Phone Number
+Status: [PASS]
+Message: What's the pharmacy phone number?
+Response: You can reach Kroger Health at: 📞 Customer Service: 1-800-922-7538  Available: Mon, Wed & Fri: 9 AM - 5:30 PM EST Tue & Thu: 10 AM - 6:30 PM EST  For pharmacy-specific questions, contact your local Kr...
+Duration: 263.61ms
+
+Intent: Delivery Info
+Status: [PASS]
+Message: Do you deliver?
+Response: Yes, Kroger Pharmacy offers delivery services for prescriptions in certain locations. You can check if delivery is available in your area by visiting the Kroger website or using the Kroger app. Additi...
+Duration: 2503.54ms
+
+Intent: Spanish Hours
+Status: [PASS]
+Message: ¿Cuáles son sus horarios?
+Response: Los horarios de las farmacias de Kroger pueden variar según la ubicación. Generalmente, muchas farmacias están abiertas de lunes a domingo, con horarios que suelen ser de 9:00 a.m. a 9:00 p.m. Sin emb...
+Duration: 2613.88ms
+
+
+## Vaccinations
+------------------------------------------------------------
+
+Intent: COVID Vaccine
+Status: [PASS]
+Message: Do you have COVID vaccines?
+Response: Yes, Kroger Health offers COVID-19 vaccines. We have both on-site administration services and vouchers for in-pharmacy or clinic administration. If you would like to schedule a vaccination for yoursel...
+Duration: 1723.07ms
+
+Intent: Flu Shot
+Status: [PASS]
+Message: Can I get a flu shot?
+Response: Yes, you can get a flu shot at Kroger Health. We offer flu vaccinations at our pharmacies and clinics. It's advisable to get vaccinated annually to help protect yourself and those around you from the ...
+Duration: 5831.30ms
+
+Intent: Vaccine List
+Status: [PASS]
+Message: What vaccines do you offer?
+Response: Kroger Health offers a variety of vaccines, including:  1. **COVID-19 Vaccines** - Available for eligible populations to help protect against COVID-19. 2. **Flu Vaccines** - Seasonal flu shots to help...
+Duration: 3988.14ms
+
+Intent: Vaccine Appointment
+Status: [PASS]
+Message: How do I schedule a vaccine?
+Response: To schedule a vaccine through Kroger Health, you can visit our website and navigate to the vaccination section. There, you can choose the type of vaccine you need and select a convenient location and ...
+Duration: 2755.04ms
+
+Intent: Vaccine Cost
+Status: [PASS]
+Message: Are vaccines free?
+Response: COVID-19 vaccines are typically offered at no cost to individuals, regardless of insurance status. However, it's always a good idea to check with your local Kroger pharmacy for specific details regard...
+Duration: 3094.54ms
+
+Intent: Spanish COVID Vaccine
+Status: [PASS]
+Message: ¿Tienen vacunas contra el COVID?
+Response: Sí, en Kroger Health ofrecemos vacunas contra el COVID-19. Disponemos de diferentes opciones de vacunas y, dependiendo de la disponibilidad en su área, puede recibir la primera y segunda dosis, así co...
+Duration: 3172.39ms
+
+
+## Prescription & Refills
+------------------------------------------------------------
+
+Intent: Refill Process
+Status: [PASS]
+Message: How do I refill my prescription?
+Response: To refill your prescription at Kroger Pharmacy, you can follow these steps:  1. **Online:** Log in to your Kroger Pharmacy account on the Kroger website or mobile app. Navigate to your prescriptions a...
+Duration: 5999.81ms
+
+Intent: Online Refill
+Status: [PASS]
+Message: Can I refill online?
+Response: Yes, you can refill your prescriptions online at Kroger Pharmacy. Simply visit the Kroger website or use the Kroger app, navigate to the pharmacy section, and sign in to your account. From there, you ...
+Duration: 2310.96ms
+
+Intent: Refill Status
+Status: [PASS]
+Message: What's the status of my refill?
+Response: To check the status of your prescription refill, you can either visit your local Kroger pharmacy in person or use the Kroger app or website. If you have a pharmacy account set up, logging in will allo...
+Duration: 3272.44ms
+
+Intent: Prescription Ready
+Status: [PASS]
+Message: Is my prescription ready?
+Response: To check if your prescription is ready, I recommend contacting your local Kroger pharmacy directly. You can also use the Kroger app or website to check the status of your prescription. If you have any...
+Duration: 1667.83ms
+
+Intent: Transfer Prescription
+Status: [PASS]
+Message: Can you transfer my prescription?
+Response: Yes, we can help you transfer your prescription to a Kroger pharmacy. To initiate the transfer, please provide us with the following information:  1. The name and phone number of your current pharmacy...
+Duration: 3519.92ms
+
+Intent: Spanish Refill
+Status: [PASS]
+Message: ¿Cómo puedo renovar mi receta?
+Response: Para renovar tu receta en Kroger Pharmacy, tienes varias opciones:  1. **En línea**: Si tienes una cuenta en el portal de Kroger, puedes iniciar sesión y solicitar la renovación de tu receta desde all...
+Duration: 4284.28ms
+
+
+## Health Services
+------------------------------------------------------------
+
+Intent: Services List
+Status: [PASS]
+Message: What health services do you offer?
+Response: Kroger Health offers a variety of health services designed to support the wellness of individuals and communities. Our services include:  1. **Pharmacy Services**: We provide prescription filling, med...
+Duration: 5273.81ms
+
+Intent: BP Check
+Status: [PASS]
+Message: Do you do blood pressure checks?
+Response: Yes, Kroger Health pharmacies typically offer blood pressure checks as a part of our wellness services. These checks are often free and can help you monitor your cardiovascular health. It's a good ide...
+Duration: 2703.72ms
+
+Intent: Diabetes Screening
+Status: [PASS]
+Message: Can I get a diabetes screening?
+Response: Yes, Kroger Health provides diabetes screenings as part of our health services. These screenings can help assess your risk for diabetes and monitor your blood sugar levels. You can schedule a diabetes...
+Duration: 2253.40ms
+
+Intent: Wellness Programs
+Status: [PASS]
+Message: Tell me about your wellness programs
+Response: At Kroger Health, we offer a variety of wellness programs designed to support your overall health and well-being. Here are some key programs:  1. **Nutrition Counseling**: Our Virtual Nutrition Counse...
+Duration: 5155.87ms
+
+Intent: Dietitian Services
+Status: [PASS]
+Message: Do you have a dietitian?
+Response: Yes, at Kroger Health, we offer access to registered dietitians who can provide personalized nutrition counseling. Our dietitians are trained to help you make healthier food choices and develop a plan...
+Duration: 2503.09ms
+
+Intent: Spanish Services
+Status: [PASS]
+Message: ¿Qué servicios de salud ofrecen?
+Response: Kroger Health ofrece una variedad de servicios de salud que incluyen:  1. **Servicios de Farmacia**: Dispensación de medicamentos recetados y de venta libre, asesoramiento sobre medicamentos, y servic...
+Duration: 4175.61ms
+
+
+## Insurance & Payment
+------------------------------------------------------------
+
+Intent: Insurance Coverage
+Status: [PASS]
+Message: Do you accept my insurance?
+Response: We accept most insurance plans and prescription discount cards:  • Medicare Part D • Medicaid • Most commercial insurance plans • Prescription discount cards  For specific coverage questions, please c...
+Duration: 264.10ms
+
+Intent: Insurance Plans
+Status: [PASS]
+Message: What insurance plans do you take?
+Response: We accept most insurance plans and prescription discount cards:  • Medicare Part D • Medicaid • Most commercial insurance plans • Prescription discount cards  For specific coverage questions, please c...
+Duration: 264.45ms
+
+Intent: Cost Inquiry
+Status: [PASS]
+Message: How much does it cost?
+Response: We accept most insurance plans and prescription discount cards:  • Medicare Part D • Medicaid • Most commercial insurance plans • Prescription discount cards  For specific coverage questions, please c...
+Duration: 273.06ms
+
+Intent: Payment Plans
+Status: [PASS]
+Message: Do you have payment plans?
+Response: Kroger Health pharmacies typically do not offer formal payment plans. However, we understand that managing medication costs can be challenging. We encourage you to speak with your pharmacist about you...
+Duration: 2928.93ms
+
+Intent: Online Payment
+Status: [PASS]
+Message: Can I pay online?
+Response: Yes, you can pay for your pharmacy services and other purchases online using Kroger Pay or other payment methods available at checkout on the Kroger website or app. Just ensure that you have a valid p...
+Duration: 1674.81ms
+
+Intent: Spanish Insurance
+Status: [PASS]
+Message: ¿Aceptan mi seguro?
+Response: Aceptamos la mayoría de planes de seguro:  • Medicare Parte D • Medicaid • La mayoría de planes comerciales • Tarjetas de descuento  Para preguntas específicas, contacte su farmacia local.
+Duration: 269.35ms
+
+
+## Complex Queries
+------------------------------------------------------------
+
+Intent: Complex Health Query
+Status: [PASS]
+Message: I have diabetes and need help managing my medications
+Response: I can help you with: • Vaccination information and scheduling • Pharmacy hours and locations • Prescription and medication questions • Health screenings and wellness programs • Insurance and payment i...
+Duration: 275.63ms
+
+Intent: Senior Programs
+Status: [PASS]
+Message: What wellness programs are available for seniors?
+Response: Kroger Health offers several wellness programs tailored for seniors, including:  1. **Nutrition Counseling**: Seniors can benefit from personalized nutrition counseling to help manage dietary needs an...
+Duration: 3641.03ms
+
+Intent: Chronic Care
+Status: [PASS]
+Message: How can Kroger Health help with my chronic conditions?
+Response: I can help you with: • Vaccination information and scheduling • Pharmacy hours and locations • Prescription and medication questions • Health screenings and wellness programs • Insurance and payment i...
+Duration: 258.39ms
+
+Intent: Affordable Meds
+Status: [PASS]
+Message: I need to find affordable medications
+Response: At Kroger Health, we understand the importance of affordable medications. Here are some options to help you find the medications you need at a lower cost:  1. **Generic Medications**: Ask your pharmac...
+Duration: 4703.18ms
+
+Intent: Specialty Pharmacy
+Status: [PASS]
+Message: Tell me about your specialty pharmacy services
+Response: Kroger Health offers specialty pharmacy services designed to support patients with complex health conditions that often require specialized medications. Our specialty pharmacies provide a range of ser...
+Duration: 5440.40ms
+
+
+## Edge Cases & Error Handling
+------------------------------------------------------------
+
+Intent: Empty Message
+Status: [FAIL]
+Message: 
+Error: HTTP 400
+Duration: 253.45ms
+
+Intent: Whitespace Only
+Status: [FAIL]
+Message:    
+Error: HTTP 400
+Duration: 264.24ms
+
+Intent: Gibberish
+Status: [PASS]
+Message: asdfghjkl
+Response: It seems like your message might have been sent in error. How can I assist you today with pharmacy services, medications, vaccinations, or wellness programs?
+Duration: 1555.08ms
+
+Intent: Numbers Only
+Status: [PASS]
+Message: 1234567890
+Response: It seems you've entered a series of numbers. If you have a specific question or need information about pharmacy services, medications, vaccinations, or wellness programs, please let me know how I can ...
+Duration: 1502.61ms
+
+Intent: Special Characters
+Status: [PASS]
+Message: ?????
+Response: Hello! How can I assist you today? If you have any questions about pharmacy services, medications, vaccinations, or wellness programs, feel free to ask!
+Duration: 1251.84ms
+
+Intent: Very Long Message
+Status: [PASS]
+Message: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+Response: It seems like you might be feeling overwhelmed or frustrated. I'm here to help! If you have any specific questions about pharmacy services, medications, vaccinations, or wellness programs, please let ...
+Duration: 1939.94ms
+
+================================================================================
+PERFORMANCE ANALYSIS
+================================================================================
+Average Response Time: 2156.49ms
+Minimum Response Time: 253.45ms
+Maximum Response Time: 5999.81ms
+P50 (Median): 1939.94ms
+P95: 5440.40ms
+
+Category Performance:
+  Greetings & Basic Interaction: 5/5 (100.0%)
+  Pharmacy Services: 6/6 (100.0%)
+  Vaccinations: 6/6 (100.0%)
+  Prescription & Refills: 6/6 (100.0%)
+  Health Services: 6/6 (100.0%)
+  Insurance & Payment: 6/6 (100.0%)
+  Complex Queries: 5/5 (100.0%)
+  Edge Cases & Error Handling: 4/6 (66.7%)
+
+================================================================================
+PRODUCTION READINESS ASSESSMENT
+================================================================================
+Grade: A - PRODUCTION READY
+System demonstrates excellent stability and response quality.
+
+Overall Pass Rate: 95.7%
+Total Execution Time: 99.24 seconds
+
+================================================================================
+END OF REPORT
+================================================================================

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corpay Financial Assistant</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="assistant-info">
+                <div class="assistant-icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="assistant-details">
+                    <h2 class="assistant-title">
+                        <i class="fas fa-chart-line"></i>
+                        <span id="assistantTitle">Corpay Financial Assistant</span>
+                    </h2>
+                    <p class="assistant-description" id="assistantDescription">
+                        👋 Hi! I'm your Corpay Financial Assistant. Ask me about
+                        payments, commercial cards, expense management, and financial
+                        solutions for your business needs.
+                    </p>
+                </div>
+            </div>
+            <div class="language-toggle">
+                <button id="langToggle" class="lang-btn" title="Switch language / Cambiar idioma">
+                    <span class="lang-flag" id="langFlag">🇺🇸</span>
+                    <span class="lang-text" id="langText">EN</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <div class="message assistant-message" id="welcomeMessage">
+                <div class="message-content" id="welcomeContent">
+                    <p><strong>Welcome to Corpay Financial Services!</strong></p>
+                    <p>I can help you with:</p>
+                    <ul>
+                        <li><strong>💳 Payment Solutions</strong> - Corporate payments, vendor payments, digital wallets</li>
+                        <li><strong>💰 Corpay Commercial Cards</strong> - Expense cards, travel cards, procurement cards</li>
+                        <li><strong>📊 Expense Management</strong> - Expense tracking, reporting, policy compliance</li>
+                        <li><strong>🌍 International Solutions</strong> - FX services, cross-border payments, hedging</li>
+                        <li><strong>📈 Financial Analytics</strong> - Spend analysis, reporting, insights</li>
+                        <li><strong>🔒 Security & Compliance</strong> - Fraud protection, regulatory compliance</li>
+                    </ul>
+                    <p>Feel free to ask me anything about our financial services!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <div class="input-wrapper">
+                <input 
+                    type="text" 
+                    id="messageInput" 
+                    placeholder="Ask about payments, corporate cards, or financial solutions..."
+                    maxlength="1000"
+                >
+                <button id="sendButton" class="send-button">
+                    <i class="fas fa-paper-plane"></i>
+                    Send
+                </button>
+            </div>
+            <div class="input-help">
+                <span class="help-text" id="helpText">
+                    💡 Try: "What payment solutions do you offer?" or "Tell me about Corpay commercial cards"
+                </span>
+            </div>
+        </div>
+
+        <div class="loading-indicator" id="loadingIndicator" style="display: none;">
+            <div class="loading-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <span>Getting your answer...</span>
+        </div>
+    </div>
+
+    <!-- Quick Action Buttons -->
+    <div class="quick-actions" id="quickActions">
+        <div class="quick-action-header" id="quickActionHeader">Quick Topics:</div>
+        <button class="quick-btn" data-query-en="What payment solutions do you offer?" data-query-es="¿Qué soluciones de pago ofrecen?">
+            <i class="fas fa-credit-card"></i> <span class="quick-text">Payments</span>
+        </button>
+        <button class="quick-btn" data-query-en="Tell me about Corpay commercial cards" data-query-es="Hábleme sobre las tarjetas comerciales de Corpay">
+            <i class="fas fa-business-time"></i> <span class="quick-text">Cards</span>
+        </button>
+        <button class="quick-btn" data-query-en="How does expense management work?" data-query-es="¿Cómo funciona la gestión de gastos?">
+            <i class="fas fa-chart-pie"></i> <span class="quick-text">Solutions</span>
+        </button>
+        <button class="quick-btn" data-query-en="What international services do you provide?" data-query-es="¿Qué servicios internacionales proporcionan?">
+            <i class="fas fa-globe"></i> <span class="quick-text">Resources</span>
+        </button>
+        <button class="quick-btn" data-query-en="What can you help me with?" data-query-es="¿En qué puede ayudarme?">
+            <i class="fas fa-question-circle"></i> <span class="quick-text">All Topics</span>
+        </button>
+    </div>
+
+    <script src="/static/translations.js"></script>
+    <script src="/static/app.js?v=4"></script>
+</body>
+</html> 

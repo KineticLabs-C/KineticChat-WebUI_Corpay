@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-08-11T23:10:49.564224+00:00",
+  "duration_seconds": 88.6035304069519,
+  "server_running": true,
+  "summary": {
+    "total_passed": 74,
+    "total_failed": 3,
+    "total_skipped": 0
+  },
+  "categories": {
+    "Smoke Tests": {
+      "passed": 12,
+      "failed": 2,
+      "skipped": 0
+    },
+    "PHI Scrubber Tests": {
+      "passed": 16,
+      "failed": 0,
+      "skipped": 0
+    },
+    "HTTP API Tests": {
+      "passed": 45,
+      "failed": 0,
+      "skipped": 0
+    },
+    "Chat Response Tests": {
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "Final Verification": {
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    }
+  }
+}

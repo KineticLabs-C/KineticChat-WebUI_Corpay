@@ -1,0 +1,923 @@
+{
+  "timestamp": "2025-08-15T15:53:43.229571+00:00",
+  "base_url": "http://localhost:8000",
+  "categories": {
+    "deterministic": {
+      "description": "Common queries with pre-defined responses (should be < 500ms)",
+      "total_tests": 21,
+      "passed": 0,
+      "failed": 21,
+      "success_rate": 0.0,
+      "avg_response_time_ms": 489.68,
+      "tests": [
+        {
+          "test_name": "greetings_0",
+          "category": "deterministic/greetings",
+          "query": "hello",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 4951.79,
+          "response_length": 0,
+          "expected_keywords": [
+            "hello",
+            "hi",
+            "welcome",
+            "kroger"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "greetings_1",
+          "category": "deterministic/greetings",
+          "query": "hi there",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 267.53,
+          "response_length": 0,
+          "expected_keywords": [
+            "hello",
+            "hi",
+            "welcome"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "greetings_2",
+          "category": "deterministic/greetings",
+          "query": "hola",
+          "language": "es",
+          "passed": false,
+          "response_time_ms": 265.87,
+          "response_length": 0,
+          "expected_keywords": [
+            "hola",
+            "bienvenido"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "greetings_3",
+          "category": "deterministic/greetings",
+          "query": "buenos días",
+          "language": "es",
+          "passed": false,
+          "response_time_ms": 270.09,
+          "response_length": 0,
+          "expected_keywords": [
+            "hola",
+            "bienvenido"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "pharmacy_hours_4",
+          "category": "deterministic/pharmacy_hours",
+          "query": "what are your hours",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 256.71,
+          "response_length": 0,
+          "expected_keywords": [
+            "hours",
+            "open",
+            "close",
+            "pharmacy"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "pharmacy_hours_5",
+          "category": "deterministic/pharmacy_hours",
+          "query": "when are you open",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 266.59,
+          "response_length": 0,
+          "expected_keywords": [
+            "open",
+            "hours",
+            "monday",
+            "sunday"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "pharmacy_hours_6",
+          "category": "deterministic/pharmacy_hours",
+          "query": "pharmacy hours",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 266.64,
+          "response_length": 0,
+          "expected_keywords": [
+            "pharmacy",
+            "hours",
+            "am",
+            "pm"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "pharmacy_hours_7",
+          "category": "deterministic/pharmacy_hours",
+          "query": "¿cuáles son sus horarios?",
+          "language": "es",
+          "passed": false,
+          "response_time_ms": 269.12,
+          "response_length": 0,
+          "expected_keywords": [
+            "horario",
+            "abierto",
+            "cerrado"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "location_8",
+          "category": "deterministic/location",
+          "query": "where are you located",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 265.76,
+          "response_length": 0,
+          "expected_keywords": [
+            "location",
+            "store",
+            "pharmacy",
+            "kroger"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "location_9",
+          "category": "deterministic/location",
+          "query": "nearest pharmacy",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 268.76,
+          "response_length": 0,
+          "expected_keywords": [
+            "pharmacy",
+            "location",
+            "find",
+            "near"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "location_10",
+          "category": "deterministic/location",
+          "query": "find a store",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 267.96,
+          "response_length": 0,
+          "expected_keywords": [
+            "store",
+            "location",
+            "kroger.com"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "location_11",
+          "category": "deterministic/location",
+          "query": "¿dónde están ubicados?",
+          "language": "es",
+          "passed": false,
+          "response_time_ms": 269.34,
+          "response_length": 0,
+          "expected_keywords": [
+            "ubicación",
+            "farmacia",
+            "encontrar"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "contact_12",
+          "category": "deterministic/contact",
+          "query": "phone number",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 267.96,
+          "response_length": 0,
+          "expected_keywords": [
+            "phone",
+            "call",
+            "contact",
+            "800"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "contact_13",
+          "category": "deterministic/contact",
+          "query": "how to contact",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 266.25,
+          "response_length": 0,
+          "expected_keywords": [
+            "contact",
+            "phone",
+            "email",
+            "kroger"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "contact_14",
+          "category": "deterministic/contact",
+          "query": "número de teléfono",
+          "language": "es",
+          "passed": false,
+          "response_time_ms": 268.68,
+          "response_length": 0,
+          "expected_keywords": [
+            "teléfono",
+            "llamar",
+            "contacto"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "insurance_15",
+          "category": "deterministic/insurance",
+          "query": "do you accept my insurance",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 266.82,
+          "response_length": 0,
+          "expected_keywords": [
+            "insurance",
+            "accept",
+            "plan",
+            "coverage"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "insurance_16",
+          "category": "deterministic/insurance",
+          "query": "insurance coverage",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 269.41,
+          "response_length": 0,
+          "expected_keywords": [
+            "insurance",
+            "coverage",
+            "plan",
+            "accept"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "insurance_17",
+          "category": "deterministic/insurance",
+          "query": "¿aceptan mi seguro?",
+          "language": "es",
+          "passed": false,
+          "response_time_ms": 268.43,
+          "response_length": 0,
+          "expected_keywords": [
+            "seguro",
+            "aceptar",
+            "cobertura"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "services_18",
+          "category": "deterministic/services",
+          "query": "what services do you offer",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 265.9,
+          "response_length": 0,
+          "expected_keywords": [
+            "service",
+            "offer",
+            "pharmacy",
+            "health"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "services_19",
+          "category": "deterministic/services",
+          "query": "pharmacy services",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 266.9,
+          "response_length": 0,
+          "expected_keywords": [
+            "pharmacy",
+            "service",
+            "medication",
+            "vaccine"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "services_20",
+          "category": "deterministic/services",
+          "query": "¿qué servicios ofrecen?",
+          "language": "es",
+          "passed": false,
+          "response_time_ms": 256.77,
+          "response_length": 0,
+          "expected_keywords": [
+            "servicio",
+            "farmacia",
+            "salud"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        }
+      ]
+    },
+    "rag_queries": {
+      "description": "Complex queries requiring RAG/AI responses (should be < 3s)",
+      "total_tests": 20,
+      "passed": 0,
+      "failed": 20,
+      "success_rate": 0.0,
+      "avg_response_time_ms": 264.04,
+      "tests": [
+        {
+          "test_name": "vaccines_0",
+          "category": "rag_queries/vaccines",
+          "query": "what vaccines do you offer",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 268.41,
+          "response_length": 0,
+          "expected_keywords": [
+            "vaccine",
+            "covid",
+            "flu",
+            "immunization"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "vaccines_1",
+          "category": "rag_queries/vaccines",
+          "query": "tell me about COVID-19 vaccines",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 268.3,
+          "response_length": 0,
+          "expected_keywords": [
+            "covid",
+            "vaccine",
+            "dose",
+            "booster"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "vaccines_2",
+          "category": "rag_queries/vaccines",
+          "query": "vaccine schedule for children",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 266.82,
+          "response_length": 0,
+          "expected_keywords": [
+            "vaccine",
+            "children",
+            "schedule",
+            "immunization"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "vaccines_3",
+          "category": "rag_queries/vaccines",
+          "query": "¿qué vacunas ofrecen?",
+          "language": "es",
+          "passed": false,
+          "response_time_ms": 269.47,
+          "response_length": 0,
+          "expected_keywords": [
+            "vacuna",
+            "covid",
+            "gripe"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "medications_4",
+          "category": "rag_queries/medications",
+          "query": "tell me about medication services",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 253.19,
+          "response_length": 0,
+          "expected_keywords": [
+            "medication",
+            "prescription",
+            "pharmacy",
+            "service"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 429"
+        },
+        {
+          "test_name": "medications_5",
+          "category": "rag_queries/medications",
+          "query": "medication therapy management",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 269.71,
+          "response_length": 0,
+          "expected_keywords": [
+            "medication",
+            "therapy",
+            "management",
+            "MTM"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "medications_6",
+          "category": "rag_queries/medications",
+          "query": "prescription refills",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 256.04,
+          "response_length": 0,
+          "expected_keywords": [
+            "prescription",
+            "refill",
+            "medication",
+            "pharmacy"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "medications_7",
+          "category": "rag_queries/medications",
+          "query": "servicios de medicamentos",
+          "language": "es",
+          "passed": false,
+          "response_time_ms": 265.66,
+          "response_length": 0,
+          "expected_keywords": [
+            "medicamento",
+            "receta",
+            "farmacia"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 429"
+        },
+        {
+          "test_name": "health_screenings_8",
+          "category": "rag_queries/health_screenings",
+          "query": "health screening services",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 267.1,
+          "response_length": 0,
+          "expected_keywords": [
+            "health",
+            "screening",
+            "test",
+            "biometric"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "health_screenings_9",
+          "category": "rag_queries/health_screenings",
+          "query": "blood pressure testing",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 268.29,
+          "response_length": 0,
+          "expected_keywords": [
+            "blood",
+            "pressure",
+            "test",
+            "screening"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 429"
+        },
+        {
+          "test_name": "health_screenings_10",
+          "category": "rag_queries/health_screenings",
+          "query": "diabetes screening",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 266.79,
+          "response_length": 0,
+          "expected_keywords": [
+            "diabetes",
+            "screening",
+            "test",
+            "blood"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "health_screenings_11",
+          "category": "rag_queries/health_screenings",
+          "query": "exámenes de salud",
+          "language": "es",
+          "passed": false,
+          "response_time_ms": 267.05,
+          "response_length": 0,
+          "expected_keywords": [
+            "examen",
+            "salud",
+            "prueba"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "specialty_programs_12",
+          "category": "rag_queries/specialty_programs",
+          "query": "tell me about food as medicine",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 252.71,
+          "response_length": 0,
+          "expected_keywords": [
+            "food",
+            "medicine",
+            "nutrition",
+            "health"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 429"
+        },
+        {
+          "test_name": "specialty_programs_13",
+          "category": "rag_queries/specialty_programs",
+          "query": "340B program",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 267.85,
+          "response_length": 0,
+          "expected_keywords": [
+            "340B",
+            "program",
+            "healthcare",
+            "savings"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "specialty_programs_14",
+          "category": "rag_queries/specialty_programs",
+          "query": "medication optimization",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 266.89,
+          "response_length": 0,
+          "expected_keywords": [
+            "medication",
+            "optimization",
+            "MEDx",
+            "therapy"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "specialty_programs_15",
+          "category": "rag_queries/specialty_programs",
+          "query": "comida como medicina",
+          "language": "es",
+          "passed": false,
+          "response_time_ms": 253.81,
+          "response_length": 0,
+          "expected_keywords": [
+            "comida",
+            "medicina",
+            "nutrición"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 429"
+        },
+        {
+          "test_name": "complex_queries_16",
+          "category": "rag_queries/complex_queries",
+          "query": "I have diabetes and need help managing my medications",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 266.71,
+          "response_length": 0,
+          "expected_keywords": [
+            "diabetes",
+            "medication",
+            "management",
+            "help"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "complex_queries_17",
+          "category": "rag_queries/complex_queries",
+          "query": "what wellness programs are available for seniors",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 265.78,
+          "response_length": 0,
+          "expected_keywords": [
+            "wellness",
+            "senior",
+            "program",
+            "health"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 429"
+        },
+        {
+          "test_name": "complex_queries_18",
+          "category": "rag_queries/complex_queries",
+          "query": "how can Kroger Health help with my chronic conditions",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 254.22,
+          "response_length": 0,
+          "expected_keywords": [
+            "chronic",
+            "condition",
+            "help",
+            "health"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "complex_queries_19",
+          "category": "rag_queries/complex_queries",
+          "query": "necesito ayuda con mis medicamentos para la diabetes",
+          "language": "es",
+          "passed": false,
+          "response_time_ms": 265.92,
+          "response_length": 0,
+          "expected_keywords": [
+            "diabetes",
+            "medicamento",
+            "ayuda"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        }
+      ]
+    },
+    "edge_cases": {
+      "description": "Edge cases and error handling",
+      "total_tests": 12,
+      "passed": 0,
+      "failed": 12,
+      "success_rate": 0.0,
+      "avg_response_time_ms": 267.04,
+      "tests": [
+        {
+          "test_name": "empty_invalid_0",
+          "category": "edge_cases/empty_invalid",
+          "query": "",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 267.89,
+          "response_length": 0,
+          "expected_keywords": [
+            "error",
+            "invalid",
+            "please"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 429"
+        },
+        {
+          "test_name": "empty_invalid_1",
+          "category": "edge_cases/empty_invalid",
+          "query": "   ",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 265.35,
+          "response_length": 0,
+          "expected_keywords": [
+            "error",
+            "invalid",
+            "please"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 400"
+        },
+        {
+          "test_name": "empty_invalid_2",
+          "category": "edge_cases/empty_invalid",
+          "query": "?????",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 267.88,
+          "response_length": 0,
+          "expected_keywords": [
+            "help",
+            "assist",
+            "service",
+            "kroger"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "empty_invalid_3",
+          "category": "edge_cases/empty_invalid",
+          "query": "123456789",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 263.77,
+          "response_length": 0,
+          "expected_keywords": [
+            "help",
+            "assist",
+            "service",
+            "kroger"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 429"
+        },
+        {
+          "test_name": "typos_4",
+          "category": "edge_cases/typos",
+          "query": "waht are yuor horus",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 267.57,
+          "response_length": 0,
+          "expected_keywords": [
+            "hours",
+            "open"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "typos_5",
+          "category": "edge_cases/typos",
+          "query": "vaccins",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 265.56,
+          "response_length": 0,
+          "expected_keywords": [
+            "vaccine"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 429"
+        },
+        {
+          "test_name": "typos_6",
+          "category": "edge_cases/typos",
+          "query": "farmacy",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 268.95,
+          "response_length": 0,
+          "expected_keywords": [
+            "pharmacy"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "long_messages_7",
+          "category": "edge_cases/long_messages",
+          "query": "I need help with my prescription refills and also want to know about vaccines and health screenings and insurance coverage and pharmacy hours and locations near me",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 268.53,
+          "response_length": 0,
+          "expected_keywords": [
+            "prescription",
+            "vaccine",
+            "screening"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "nonsense_8",
+          "category": "edge_cases/nonsense",
+          "query": "asdfghjkl zxcvbnm",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 266.22,
+          "response_length": 0,
+          "expected_keywords": [
+            "help",
+            "assist",
+            "service",
+            "kroger"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 429"
+        },
+        {
+          "test_name": "nonsense_9",
+          "category": "edge_cases/nonsense",
+          "query": "the quick brown fox jumps over the lazy dog",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 268.59,
+          "response_length": 0,
+          "expected_keywords": [
+            "help",
+            "assist",
+            "service",
+            "kroger"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "mixed_language_10",
+          "category": "edge_cases/mixed_language",
+          "query": "hello, ¿cómo está?",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 268.42,
+          "response_length": 0,
+          "expected_keywords": [
+            "hello",
+            "hola"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 500"
+        },
+        {
+          "test_name": "mixed_language_11",
+          "category": "edge_cases/mixed_language",
+          "query": "I need ayuda with my medicamentos",
+          "language": "en",
+          "passed": false,
+          "response_time_ms": 265.74,
+          "response_length": 0,
+          "expected_keywords": [
+            "help",
+            "medication"
+          ],
+          "found_keywords": [],
+          "error": "HTTP 429"
+        }
+      ]
+    }
+  },
+  "performance": {
+    "total_requests": 10,
+    "total_time_ms": 276.8,
+    "avg_response_time_ms": 273.31,
+    "p50_response_time_ms": 273.08,
+    "p95_response_time_ms": 276.5,
+    "max_response_time_ms": 276.5,
+    "min_response_time_ms": 272.43,
+    "success_rate": 0.0
+  },
+  "summary": {
+    "total_tests": 53,
+    "total_passed": 0,
+    "total_failed": 53,
+    "overall_success_rate": 0.0,
+    "test_duration_seconds": 18.77
+  }
+}

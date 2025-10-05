@@ -1,0 +1,113 @@
+{
+  "test_categories": {
+    "deterministic": {
+      "description": "Common queries with pre-defined responses (should be < 500ms)",
+      "tests": {
+        "greetings": [
+          {"query": "hello", "expected_keywords": ["hello", "hi", "welcome", "kroger"], "language": "en"},
+          {"query": "hi there", "expected_keywords": ["hello", "hi", "welcome"], "language": "en"},
+          {"query": "hola", "expected_keywords": ["hola", "bienvenido"], "language": "es"},
+          {"query": "buenos días", "expected_keywords": ["hola", "bienvenido"], "language": "es"}
+        ],
+        "pharmacy_hours": [
+          {"query": "what are your hours", "expected_keywords": ["hours", "open", "close", "pharmacy"], "language": "en"},
+          {"query": "when are you open", "expected_keywords": ["open", "hours", "monday", "sunday"], "language": "en"},
+          {"query": "pharmacy hours", "expected_keywords": ["pharmacy", "hours", "am", "pm"], "language": "en"},
+          {"query": "¿cuáles son sus horarios?", "expected_keywords": ["horario", "abierto", "cerrado"], "language": "es"}
+        ],
+        "location": [
+          {"query": "where are you located", "expected_keywords": ["location", "store", "pharmacy", "kroger"], "language": "en"},
+          {"query": "nearest pharmacy", "expected_keywords": ["pharmacy", "location", "find", "near"], "language": "en"},
+          {"query": "find a store", "expected_keywords": ["store", "location", "kroger.com"], "language": "en"},
+          {"query": "¿dónde están ubicados?", "expected_keywords": ["ubicación", "farmacia", "encontrar"], "language": "es"}
+        ],
+        "contact": [
+          {"query": "phone number", "expected_keywords": ["phone", "call", "contact", "800"], "language": "en"},
+          {"query": "how to contact", "expected_keywords": ["contact", "phone", "email", "kroger"], "language": "en"},
+          {"query": "número de teléfono", "expected_keywords": ["teléfono", "llamar", "contacto"], "language": "es"}
+        ],
+        "insurance": [
+          {"query": "do you accept my insurance", "expected_keywords": ["insurance", "accept", "plan", "coverage"], "language": "en"},
+          {"query": "insurance coverage", "expected_keywords": ["insurance", "coverage", "plan", "accept"], "language": "en"},
+          {"query": "¿aceptan mi seguro?", "expected_keywords": ["seguro", "aceptar", "cobertura"], "language": "es"}
+        ],
+        "services": [
+          {"query": "what services do you offer", "expected_keywords": ["service", "offer", "pharmacy", "health"], "language": "en"},
+          {"query": "pharmacy services", "expected_keywords": ["pharmacy", "service", "medication", "vaccine"], "language": "en"},
+          {"query": "¿qué servicios ofrecen?", "expected_keywords": ["servicio", "farmacia", "salud"], "language": "es"}
+        ]
+      }
+    },
+    "rag_queries": {
+      "description": "Complex queries requiring RAG/AI responses (should be < 3s)",
+      "tests": {
+        "vaccines": [
+          {"query": "what vaccines do you offer", "expected_keywords": ["vaccine", "covid", "flu", "immunization"], "language": "en"},
+          {"query": "tell me about COVID-19 vaccines", "expected_keywords": ["covid", "vaccine", "dose", "booster"], "language": "en"},
+          {"query": "vaccine schedule for children", "expected_keywords": ["vaccine", "children", "schedule", "immunization"], "language": "en"},
+          {"query": "¿qué vacunas ofrecen?", "expected_keywords": ["vacuna", "covid", "gripe"], "language": "es"}
+        ],
+        "medications": [
+          {"query": "tell me about medication services", "expected_keywords": ["medication", "prescription", "pharmacy", "service"], "language": "en"},
+          {"query": "medication therapy management", "expected_keywords": ["medication", "therapy", "management", "MTM"], "language": "en"},
+          {"query": "prescription refills", "expected_keywords": ["prescription", "refill", "medication", "pharmacy"], "language": "en"},
+          {"query": "servicios de medicamentos", "expected_keywords": ["medicamento", "receta", "farmacia"], "language": "es"}
+        ],
+        "health_screenings": [
+          {"query": "health screening services", "expected_keywords": ["health", "screening", "test", "biometric"], "language": "en"},
+          {"query": "blood pressure testing", "expected_keywords": ["blood", "pressure", "test", "screening"], "language": "en"},
+          {"query": "diabetes screening", "expected_keywords": ["diabetes", "screening", "test", "blood"], "language": "en"},
+          {"query": "exámenes de salud", "expected_keywords": ["examen", "salud", "prueba"], "language": "es"}
+        ],
+        "specialty_programs": [
+          {"query": "tell me about food as medicine", "expected_keywords": ["food", "medicine", "nutrition", "health"], "language": "en"},
+          {"query": "340B program", "expected_keywords": ["340B", "program", "healthcare", "savings"], "language": "en"},
+          {"query": "medication optimization", "expected_keywords": ["medication", "optimization", "MEDx", "therapy"], "language": "en"},
+          {"query": "comida como medicina", "expected_keywords": ["comida", "medicina", "nutrición"], "language": "es"}
+        ],
+        "complex_queries": [
+          {"query": "I have diabetes and need help managing my medications", "expected_keywords": ["diabetes", "medication", "management", "help"], "language": "en"},
+          {"query": "what wellness programs are available for seniors", "expected_keywords": ["wellness", "senior", "program", "health"], "language": "en"},
+          {"query": "how can Kroger Health help with my chronic conditions", "expected_keywords": ["chronic", "condition", "help", "health"], "language": "en"},
+          {"query": "necesito ayuda con mis medicamentos para la diabetes", "expected_keywords": ["diabetes", "medicamento", "ayuda"], "language": "es"}
+        ]
+      }
+    },
+    "edge_cases": {
+      "description": "Edge cases and error handling",
+      "tests": {
+        "empty_invalid": [
+          {"query": "", "expected_behavior": "error_message", "language": "en"},
+          {"query": "   ", "expected_behavior": "error_message", "language": "en"},
+          {"query": "?????", "expected_behavior": "help_message", "language": "en"},
+          {"query": "123456789", "expected_behavior": "help_message", "language": "en"}
+        ],
+        "typos": [
+          {"query": "waht are yuor horus", "expected_keywords": ["hours", "open"], "language": "en"},
+          {"query": "vaccins", "expected_keywords": ["vaccine"], "language": "en"},
+          {"query": "farmacy", "expected_keywords": ["pharmacy"], "language": "en"}
+        ],
+        "long_messages": [
+          {"query": "I need help with my prescription refills and also want to know about vaccines and health screenings and insurance coverage and pharmacy hours and locations near me", "expected_keywords": ["prescription", "vaccine", "screening"], "language": "en"}
+        ],
+        "nonsense": [
+          {"query": "asdfghjkl zxcvbnm", "expected_behavior": "help_message", "language": "en"},
+          {"query": "the quick brown fox jumps over the lazy dog", "expected_behavior": "help_message", "language": "en"}
+        ],
+        "mixed_language": [
+          {"query": "hello, ¿cómo está?", "expected_keywords": ["hello", "hola"], "language": "en"},
+          {"query": "I need ayuda with my medicamentos", "expected_keywords": ["help", "medication"], "language": "en"}
+        ]
+      }
+    },
+    "performance": {
+      "description": "Performance benchmarks",
+      "requirements": {
+        "deterministic_response_time_ms": 500,
+        "rag_response_time_ms": 3000,
+        "max_response_time_ms": 5000,
+        "concurrent_users": 10
+      }
+    }
+  }
+}
